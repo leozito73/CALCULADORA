@@ -4,7 +4,6 @@
     <meta charset="utf-8"> 
     <script src="https://kit.fontawesome.com/9e8101d399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
     <title>CALCULADORA</title>
     </head>
   <body>
@@ -13,36 +12,41 @@
 
         <table>
             <tr>
-                <td> <button class="btn ac" style="width:106px;"> AC </button> </td>
-                <td> <button class="btn neg"> <i class="fa-solid fa-delete-left"></i></i></button> </td>
-                <td> <button class="btn especial"> <i class="fa-solid fa-divide"></i></button> </td>
+                <td> <button class="btn ac" style="width:106px;" onclick="clean()"> AC </button> </td>
+
+                <td> <button class="btn neg" onclick="backspace()"> <i class="fa-solid fa-delete-left"></i></i></button> </td>
+                
+                <td> <button class="btn especial1" onclick="insert('/')"> <i class="fa-solid fa-divide"></i></button> </td>
             </tr>
 
             <tr>
-                <td> <button class="btn 7"> 7 </button> </td>
-                <td> <button class="btn 8"> 8 </i></i></button> </td>
-                <td> <button class="btn 9"> 9 </i></button> </td>
-                <td> <button class="btn especial"> <i class="fa-solid fa-xmark"></i> </i></button> </td>
+                <td> <button class="btn 7" onclick="insert('7')"> 7 </button> </td>
+                
+                <td> <button class="btn 8" onclick="insert('8')"> 8 </i></i></button> </td>
+                
+                <td> <button class="btn 9" onclick="insert('9')"> 9 </i></button> </td>
+                
+                <td> <button class="btn especial2" onclick="insert('*')"> <i class="fa-solid fa-xmark"></i> </i></button> </td>
             </tr> 
 
             <tr>
-                <td> <button class="btn 4"> 4 </button> </td>
-                <td> <button class="btn 5"> 5 </i></i></button> </td>
-                <td> <button class="btn 6"> 6 </i></button> </td>
-                <td> <button class="btn especial"> <i class="fa-solid fa-minus"></i> </i> </i></button> </td>
+                <td> <button class="btn 4" onclick="insert('4')"> 4 </button> </td>
+                <td> <button class="btn 5" onclick="insert('5')"> 5 </i></i></button> </td>
+                <td> <button class="btn 6" onclick="insert('6')"> 6 </i></button> </td>
+                <td> <button class="btn especial3" onclick="insert('-')"> <i class="fa-solid fa-minus"></i> </i> </i></button> </td>
             </tr> 
 
             <tr>
-                <td> <button class="btn 1"> 1 </button> </td>
-                <td> <button class="btn 2"> 2 </i></i></button> </td>
-                <td> <button class="btn 3"> 3 </i></button> </td>
-                <td> <button class="btn especial"> <i class="fa-solid fa-plus"></i> </i></button> </td>
+                <td> <button class="btn 1" onclick="insert('1')"> 1 </button> </td>
+                <td> <button class="btn 2" onclick="insert('2')"> 2 </i></i></button> </td>
+                <td> <button class="btn 3" onclick="insert('3')"> 3 </i></button> </td>
+                <td> <button class="btn especial4" onclick="insert('+')"> <i class="fa-solid fa-plus"></i> </i></button> </td>
             </tr> 
 
             <tr>
-                <td> <button class="btn 0"> 0 </button> </td>
-                <td> <button class="btn ponto"> . </i></i></button> </td>
-                <td> <button class="btn igual" style="width:106px;"> = </i></button> </td>
+                <td> <button class="btn 0" onclick="insert('0')"> 0 </button> </td>
+                <td> <button class="btn ponto" onclick="insert('.')"> . </i></i></button> </td>
+                <td> <button class="btn igual" style="width:106px;" onclick="confirm()"> = </i></button> </td>
             </tr> 
 
         </table>
@@ -51,5 +55,6 @@
 
 
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

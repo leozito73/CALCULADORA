@@ -52,13 +52,36 @@ aqui chama a class dos botoes e modifica o css.
     background-color: rgb(105, 111, 175);
 }
 
-.especial {
-    background-color: rgb(45, 49, 92);
+.especial1 {
+    background-color: rgb(0, 21, 255);
 }
 
-.especial:hover{
-    background-color: rgb(105, 111, 175);
+.especial1:hover{
+    background-color: rgb(41, 47, 117);
 }
+
+.especial2 {
+    background-color: rgb(255, 0, 212);
+}
+
+.especial2:hover{
+    background-color: rgb(102, 44, 93);
+}
+.especial3 {
+    background-color: rgb(0, 255, 34);
+}
+
+.especial3:hover{
+    background-color: rgb(37, 85, 32);
+}
+.especial4 {
+    background-color: rgb(255, 0, 0);
+}
+
+.especial4:hover{
+    background-color: rgb(97, 38, 38);
+}
+
 .igual {
     background-color: rgb(45, 49, 92);
 }
