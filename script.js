@@ -1,11 +1,18 @@
-const resutado = document.querySelector(" .result");
+const resultado = document.querySelector(" .result");
 const confirmar = document.querySelector(" .igual");
 
 
 function insert(valor){
-    resutado.innerHTML += valor;
+    resultado.innerHTML += valor;
 }
 
 function clean(){
-    resutado.innerHTML = "";
+    resultado.innerHTML = "";
+}
+
+function backspace(){
+    if(resultado.textContent ){
+        let result = document.getElementById('resultado').innerHTML
+        resultado.innerHTML = result.substring(0, result.length -1);
+    }
 }
