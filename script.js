@@ -16,7 +16,7 @@ function backspace(){
         resultado.innerHTML = result.substring(0, result.length -1);
     }
 }
-
+//A função Eval avalia o expressão de cadeia de caracteres e retorna seu valor.
 function calcular(){
     if(resultado.textContent != 'Erro'){
         document.getElementById('resultado').innerHTML = eval(resultado.innerHTML)
